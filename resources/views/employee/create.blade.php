@@ -49,7 +49,7 @@ btn-outline-light my-2 ms-md-auto"><i
                             <input class="form-control" type="text" name="firstName" id="firstName" value=""
                                 placeholder="Enter First Name">
                             @error('firstName')
-                            <p style="color:red; margin-bottom:25px;">Isi Terlebih Dahulu !</p>
+                            <p style="color:red; margin-bottom:25px;">{{$message}}</p>
                             @enderror
                         </div>
                         <div class="col-md-6 mb-3">
@@ -58,7 +58,7 @@ btn-outline-light my-2 ms-md-auto"><i
                             <input class="form-control" type="text" name="lastName" id="lastName" value=""
                                 placeholder="Enter Last Name">
                             @error('lastName')
-                            <p style="color:red; margin-bottom:25px;">Isi Terlebih Dahulu !</p>
+                            <p style="color:red; margin-bottom:25px;"{{$message}}</p>
                             @enderror
                         </div>
                         <div class="col-md-6 mb-3">
@@ -66,7 +66,7 @@ btn-outline-light my-2 ms-md-auto"><i
                             <input class="form-control" type="text" name="email" id="email" value=""
                                 placeholder="Enter Email">
                             @error('email')
-                            <p style="color:red; margin-bottom:25px;">Isi Terlebih Dahulu !</p>
+                            <p style="color:red; margin-bottom:25px;">{{$message}}</p>
                             @enderror
                         </div>
                         <div class="col-md-6 mb-3">
@@ -74,7 +74,7 @@ btn-outline-light my-2 ms-md-auto"><i
                             <input class="form-control" type="text" name="age" id="age" value=""
                                 placeholder="Enter Age">
                             @error('age')
-                            <p style="color:red; margin-bottom:25px;">Isi Terlebih Dahulu !</p>
+                            <p style="color:red; margin-bottom:25px;">{{$message}}</p>
                             @enderror
                         </div>
                     </div>
